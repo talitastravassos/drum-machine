@@ -5,4 +5,4 @@ import App from './App';
 import { DATA } from './Data';
 
 
-ReactDOM.render(<App Data={DATA}/>, document.getElementById('root'));
+ReactDOM.render(<App data={DATA}/>, document.getElementById('root'));
