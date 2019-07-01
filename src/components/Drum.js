@@ -1,16 +1,10 @@
 import React, {useEffect, useState} from 'react'
 
-const onStyle = {transform: "scale(0.95)", boxShadow: "1px 1px 4px 4px cyan, -1px -1px 4px 4px cyan"};
+const onStyle = {transform: "scale(0.95)", boxShadow: "1px 1px 4px 4px #FC2D00, -1px -1px 4px 4px #FC2D00"};
 const offStyle = {transform: "scale(1)", boxShadow: "none"};
 
 const Drum = (props) => {
     const [isPlaying, setIsPlaying] = useState(false)
-
-    const handleKeyPress = (e) => {
-        if (e.keyCode === props.drum.keycode) {
-          onPlay();
-        }
-      }
 
       const onPlay = () => {
         if(props.power) {
@@ -27,12 +21,7 @@ const Drum = (props) => {
         }
       }
 
-    useEffect(() => {
-        document.addEventListener('keydown', handleKeyPress);
-        // document.removeEventListener('keydown', this.handleKeyPress);
-    }, [])
-
-    const style = !props.power ? {background: '#476b68'} : isPlaying ? onStyle : offStyle;
+    const style = !props.power ? {background: '#FC2D00'} : isPlaying ? onStyle : offStyle;
 
     return (
         <div style={style} className="outer-drum-pad">

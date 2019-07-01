@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Russo+One&display=swap');
+
 .App {
   text-align: center;
 }
@@ -36,8 +38,9 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background: #ea910b;
-  font-family: "Audiowide", monospace;
+  background: #D3D3D3;
+  // font-family: "Audiowide", monospace;
+  font-family: 'Russo One', sans-serif;
 }
 
 .machine {
@@ -60,7 +63,7 @@
 .outer-drum-pad {
   width: 120px;
   height: 120px;
-  background: #1ec8ce;
+  background: #FF5733;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -98,9 +101,10 @@
 
 .label {
   color: white;
+  font-family: 'Lobster', cursive;
   font-style: italic;
   text-align: center;
-  font-size: 24px;
+  font-size: 2rem;
 }
 
 .display {
@@ -109,10 +113,10 @@
   margin: 20px auto;
   padding: 5px;
   font-size: 20px;
-  background: #1ec8ce;
+  background: #FF5733;
   border: 2px solid #333;
   border-radius: 3px;
-  color: #111;
+  color: #fff;
 }
 
 .speakers {

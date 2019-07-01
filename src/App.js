@@ -39,8 +39,7 @@ class App extends React.Component {
   }
   
   render () {
-    
-    const colorStyle = this.state.power ? {background: '#1ec8ce'} : {background: '#476b68'};
+    const colorStyle = this.state.power ? {background: '#F75F3F'} : {background: '#476b68'};
     
     const pads = this.props.data.map((pad, i) => {
       return <Drum key={i} 
